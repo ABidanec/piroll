@@ -1,0 +1,28 @@
+footer.footer
+    .l-center
+        .footer__block.footer__block_copyright
+            h3.footer__head Piroll Design, Inc
+            p © 2017 Piroll. All rights reserved.
+            p Designed by robirurk.
+        .footer__block.footer__block_contact
+            p
+                a.footer__link(href="mailto:hello@pirolltheme.com") hello@pirolltheme.com
+            p
+                a.footer__link(href="tel:+44987065908") +44 987 065 908
+        nav.footer__block.footer__block_menu
+            -var footerList1 = ["Projects","About","Services","Carreer"];
+            ul.footer__list
+                -for(var item in footerList1)
+                    li.footer__item
+                        a.footer__link(href="#")=footerList1[item]
+            -var footerList2 = ["News","Events","Contacts","Legals"];
+            ul.footer__list
+                -for(var item in footerList2)
+                    li.footer__item
+                        a.footer__link(href="#")=footerList2[item]
+        .footer__block.footer__block__soc
+            -var footerSocList = ["Facebook", "Twitter","Instagram","Dribbble"];
+            ul.footer__list
+                -for(var item in footerSocList)
+                    li.footer__item
+                        a.footer__link(href="#")=footerSocList[item]

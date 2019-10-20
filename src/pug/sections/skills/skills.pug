@@ -1,0 +1,9 @@
+section.skills
+    .l-center
+        h2.block__head Professional Skills
+        -var skillsList = ["UI/UX Design 75%","web development 90%","marketing 65%"];
+        ul.skills__list
+            -for(var item in skillsList)
+                li.skills__item
+                    h3.skills__name= skillsList[item]
+                    .skills__svg

@@ -1,0 +1,12 @@
+section.testimonials
+    .l-center
+        -var testList = [{name: "ui / ux design", desc: "Be set fourth land god darkness make it wherein own", class: "design"},{name: "web development", desc: "A she'd them bring void moving third she'd kind fill", class: "development"}, {name: "app / mobile", desc: "Dominion man second spirit he, earth they're creeping",class: "app"},{name: "game design", desc: "Morning his saying moveth it multiply appear life be", class: "game"},{name: "SEO / marketing", desc: "Give won't after land fill creeping meat you, may", class: "seo"},{name: "photography", desc: "Creepeth one seas cattle grass give moving saw give", class: "photo"},{name: "graphic design", desc: "Open, great whales air rule for, fourth life whales", class: "graphic"},{name: "illustrations", desc: "Whales likeness hath, man kind for them air two won't", class: "illustration"}];
+        ul.testimonials__list
+            -for(var item in testList)
+                li(class="testimonials__item testimonials__item_"+testList[item].class)
+                    h3.testimonials__head=testList[item].name
+                    .testimonials__desc
+                        p=testList[item].desc
+
+
+

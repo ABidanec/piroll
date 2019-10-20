@@ -1,0 +1,6 @@
+nav.menu
+    -var menuList = ['Home', 'About', 'Work', 'Process', 'Services', 'Testimonials', 'Contacts'];
+    ul.menu__list
+        -for(item in menuList)
+            li.menu__item
+                a.menu__link(href="#")= menuList[item]

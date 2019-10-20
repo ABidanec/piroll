@@ -1,0 +1,8 @@
+section.numbers
+    .l-center
+        -var numbersList = [{number: 548,desc: "projects completed",class: "projects"},{number: 1465,desc: "WORKING HOURS",class: "working"},{number: 612,desc: "POSITIVE FEEDBACKS",class: "feedbacks"},{number: 735,desc: "HAPPY CLIENTS",class: "clients"}];
+            ul.numbers__list
+                -for(var item in numbersList)
+                    li(class="numbers__item numbers__item_"+numbersList[item].class)
+                        .numbers__count=numbersList[item].number
+                        .numbers__desc=numbersList[item].desc
